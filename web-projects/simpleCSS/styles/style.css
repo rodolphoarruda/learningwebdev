@@ -1,0 +1,44 @@
+/* 20230311 first exercises
+*/
+
+html {
+  font-size: 16px; /* px means "pixels": the base font size is now 16 pixels high */
+  font-family: "Roboto", sans-serif; /* this should be the rest of the output you got from Google Fonts */
+  background-color: #ffffcc;
+}
+
+body {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px 20px 20px 20px;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px 0;
+}
+
+p,
+li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+em {
+  padding-block-start: 5%;
+  display: block; /* converts `em` from an inline element into block element */ 
+}
+
+a {
+  color: blue;
+}
+
+a:hover {
+  color: red;
+}
+
+input {
+  display: block;
+  margin-block-end: 3%;
+}

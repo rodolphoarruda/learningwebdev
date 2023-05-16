@@ -1,0 +1,90 @@
+# CSS
+
+Like HTML, CSS is not a programming language. It's not a markup language either. CSS is a *style sheet language*. 
+
+CSS is what you use to selectively *style HTML elements*.
+
+## Linking to an external stylesheet
+
+Add a link element to the <head> area of the HTML page. Like this one:
+
+`<link href="styles/style.css" rel="stylesheet" />`
+
+## Structure of declarations.
+
+Let's see this example. This is a CSS "declaration" for the paragraph element.
+
+`
+p {
+  color: red;
+}
+`
+
+The letter "p" is the selector. It defines the html element to be styled.
+
+"color" is a property of the selector.
+
+"red" is the value of that property.
+
+What is between curly brackets is a declaration. A declaration is a single style rule and not a set of rules. A declaration ends with a semi-colon.
+
+This is an element with multiple declarations, which makes it a "ruleset".
+`
+p {
+  color: red;
+  width: 500px;
+  border: 1px solid black;
+}
+`
+
+It is possible to apply the same property to multiple selectors at once using commas to separate each element. Example below.
+
+`
+li,
+h1 {
+  color: red;
+}
+`
+
+## Types of selectors
+
+There are a lot of types of selectors. Here are the most common for beginners.
+
+The first one is the "tag selector", like "p" for the <p> tag.
+
+Then there is the "ID selector", which can be created and whose value must be unique within the page. It cannot be used to style a paragraph and an image at the same page, for instance. ID selectors use the hash sign #. So, as a rule of thumb, ID means individuality. 
+
+"#my-id"
+selects <p id="my-id"> or <a id="my-id"> 
+
+Class selectors are named having a dot as a suffix. It can be used several times within a page to style various elements at the same time. As a rule of thumb, a class is a class of things, collective.
+
+".my-class"
+selects <p class="my-class"> and <a class="my-class">
+
+Attribute selector works on the attribute of an element, but does not effect the element itself. For example:
+
+"img[src]"
+selects <img src="myimage.png">
+
+Pseudo-class selectors work only on a specific state. For example.
+
+"a:hover"
+selects <a>, but only when the mouse pointer is hovering over the link. 
+
+## Comments
+
+Anything in CSS between /* and */ is a CSS comment.
+
+## The "box model"
+
+CSS layout is mostly based on the box model. Boxes pilled up on other boxes.
+
+Property with 4 possible values like "padding" or "margin" are interpreted clockwise.
+
+`padding: 0 20px 20px 20px;`
+
+Will be interpreted as
+
+padding: top right bottom left;
+

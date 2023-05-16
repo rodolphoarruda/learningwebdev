@@ -1,0 +1,76 @@
+# Web
+
+https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/The_web_and_web_standards
+
+TimBL wrote Information Management: A Proposal and HyperText at CERN; these two publications together provided the background for how the web would work. They received a fair amount of interest, enough to convince TimBL's bosses to allow him to go ahead and create a global hypertext system.
+
+## Web standards
+
+Web standards are the technologies we use to build web sites. These standards exist as long technical documents called specifications, which detail exactly how the technology should work.
+
+The W3C is the best known web standards body, but there are others such as the WHATWG (who maintain the living standards for the HTML language), ECMA (who publish the standard for ECMAScript, which JavaScript is based on).
+## "Open" standards
+
+One of the key aspects of web standards, which TimBL and the W3C agreed on from the start, is that the web (and web technologies) should be free to both contribute and use, and not encumbered by patents/licensing. Therefore anyone can write the code to build a website for free, and anyone can contribute to the standards creation process, where the specs are written.
+
+### HTTP
+
+It's an application level protocol on top of TCP/IP.
+
+To be able to communicate, two parties (be they software, devices, people, etc.) need:
+
+* Syntax (data format and coding)
+* Semantics (control information and error handling)
+* Timing (speed matching and sequencing)
+
+HTTP methods: OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
+
+being GET the most common by a large margin.
+
+the family of codes:
+
+* 1xx (Informational): Request received, continuing process.
+* 2xx (Successful): The action was successfully received, understood, and accepted.
+* 3xx (Redirection): Further action needs to be taken in order to complete the request.
+* 4xx (Client Error): The request contains bad syntax or cannot be fulfilled.
+* 5xx (Server Error): The server failed to fulfil an apparently valid request.
+
+## Basic tooling
+
+* a computer
+* a text editor
+* a web browser
+* a graphic editor
+* an FTP program
+* an automation system (Webpack, Grunt or Gulp)
+
+## Web development process
+
+### Planning
+
+1. what the site is about?
+2. what information are you presenting?
+3. what does the website look like? (design)
+
+skecthing with paper and pencil.
+
+proceed by choosing:
+
+* text
+* colors
+* images
+* font
+
+## Dealing with files
+
+simply define a folder within your computer to host your web-development projects.
+
+files and folders must be named using lower case and no spaces between words.
+
+structures usually involve the following files and folders:
+
+* html files
+* images
+* styles
+* scripts
+

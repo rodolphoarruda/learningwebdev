@@ -1,0 +1,166 @@
+# HTML
+
+HTML files are structures made of "elements".
+
+## Elements
+
+Each element has:
+
+* an opening tag
+* a closing tag
+* content in between
+* attributes sit inside the opening tag
+
+Some attributes have value. Others don't.
+
+`<p class="editor-note">Very nice subject!</p>`
+
+Attribute names are always followed by an equal sign and values between quotation marks.
+
+`<p attribute-name="attribute-value">Content</p>.
+
+There are *void elements*. They don't wrap content within the tags. The best examples are the `img` tag and the `meta` tag.
+
+`<img src="image.png" alt="this is an image" />`
+
+Good reasons to use the `alt` attribute:
+
+* Helps people who are visually impaired. Users with significant visual impairments often use tools called screen readers to read out the alt text to them.
+* Something has gone wrong causing the image not to display. For example, try deliberately changing the path inside your src attribute to make it incorrect. If you save and reload the page, you should see something there in place of the image.
+
+## Meta tags
+
+Some meta tags have two distinct attributes that work together: name and content. Name defines the object, for example, "viewport" and the content the attribute or characteristic of the object. In the example below, the meta tag is defining characteristic of the "viewport". 
+
+`<meta name="viewport" content="width=device-width" />`
+
+As a rule of thumb all html files must start with a doctype preamble. 
+
+`<!DOCTYPE html>`
+
+Then there is the html tag which is the *root* tag. It normally has the language attribute to set the language of the content inside the page.
+
+The <head> tag defines all the stuff used by the page that is not displayed to the user. 
+
+## Headings.
+
+HTML contains 6 heading levels, <h1> - <h6>, although you'll commonly only use 3 to 4 at most.
+
+## Comments.
+
+Comments are placed between `<!--` and -->`
+
+The "<!" indicates it is not a tag because it doesn't have a name. So it is not a "comment tag", just a "comment".
+
+## Paragraphs.
+
+Elements with the <p> tag.
+
+## Lists.
+
+2 types: ordered (with numbers) and unordered (with bullets or dashes)
+
+The ordered type uses the <ol> tag.
+
+The unordered type uses the <ul> tag.
+
+After that, list items are defined by the <li> tag no matter the list type.
+
+## Description Lists
+
+They are another type of list that can be used in addition to <ul> and <ol>.
+
+There is an opening tag <dl> and than structure tags like title <dt> and the description itself <dd>.
+
+It's possible to add multiple descriptions under a title.
+
+## Quotation
+
+There are two major ways to add quotations to HTML.
+
+The first one uses <blockquote>, which has a 'cite' attribute to inform the source of the quotation.
+
+The second one is <code> for quick insertions of code inline without the need to break paragraphs. 
+
+## Times and Dates
+
+This is really interesting.
+
+There is a formal way to represent time and dates within HTML so that computers can read the information in a "normalized" way and do something about it. Let us say the page is being scraped from time to time and the scrapper program needs to identify time/date tags and import them into a database. The screen format won't matter much as long as there is a <time> tag with a 'datetime' attribute which states date in standard format 'yyyy-mm-dd'.
+
+In fact, there are a lot of ways to represent date and time using the 'datetime' attribute. 
+
+## Links
+
+The link element has the <a> tag and the "href" attribute which holds the target address to the link.
+
+## Assessibility
+
+Is a big topic in HTML.
+
+Whenever you use <strong>, screen readers will give a stronger tone of voice when reading the content within that tag. The same goes for the tag <em>, which refers to "emphasis". 
+
+Using old tags like <b> for "bold" content is no longer appropriate. It is better to use new tags to favor assessibility. 
+
+## Structure
+
+It is very important to use the right element strucuture and semantics to compose HTML documents. This is because they are used by various tools to provide acessibility to handicaped users.
+
+In terms of document structure, there are dedicated tags that can be used to define important sections of the document, such as:
+
+- header
+- nav, for navigation and menus
+- main, main content
+- article and section for pieces of content inside the page
+- divs for even more granular pieces of content
+- aside for sidebars, usually placed within main
+- footer
+
+The preferrable non-semantic element for wrapping content and making transformation to it using CSS or JS is <div> or <span>. We should use these with a "class" attribute, like this
+
+<div class="product-list"></div>
+
+<div> is a block element. <span> is an inline element which you should only use if you can't think of a better semantic text element to wrap your content.
+
+The <br> and <hr> elements are also non semantic and can be used to structure content within the page.
+
+<br> is used to force a line break within the paragraph. Useful for when adding miltiple line addresses or writting poems. 
+
+<hr> add the well known horizontal line to the page, separating visually pieces of content above and below it.
+
+in both cases the element's syntax is <br /> or <hr />
+
+## Debugging HTML
+
+There are 2 ways of doing it.
+
+For shorter documents, the browser's DOM inspector can highlight what's wrong with the tags.
+
+Online HTML inspectors can be use to analyze large pages for errors. This is one of the most famous online: https://validator.w3.org   
+
+## Embedding media
+
+The most common elements are <video> and <audio>
+
+Regarding images, search engines also read image filenames and count them towards SEO. Therefore, you should give your image a descriptive filename; dinosaur.jpg is better than img835.png
+
+The alt attribute in images allows you to dd a piece of text that is visible to users in case the image can't be loaded by the browser.
+
+The title attribute generates a tooltip when the mouse hovers an image. 
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+
+
+
