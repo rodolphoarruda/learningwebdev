@@ -164,8 +164,21 @@ Buttons are well known elements within forms. By clicking one without any attrib
 
 The "id" attribute serves the noble function of identifying elements that are unique within the page.
 
+When working with checkboxes, form data for selected checkboxes are `name` and `value` attribute pairs. 
 
+Value attributes must match the `id` attribute of each checkbox.
 
+So a type="checkbox" or type="radio" must have the following attributes:
+
+- `id`
+- `name`
+- `value`
+
+and the element `label` as a best practice to kind of attach the actual visible label of the checkbox/radiobutton to its `input` element using the `for` attribute matching the `id` attribute.
+
+For example:
+
+<input id="blue"> <label for="blue">blue</label>
 
 
 
